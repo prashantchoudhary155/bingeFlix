@@ -1,0 +1,121 @@
+.banner-container {
+    font-size: 0.9rem;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow:hidden;
+    align-items: flex-start;
+    height: 200px;
+    margin-top: 1rem;
+}
+
+
+.banner-container-bg-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(5px); 
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);    
+}
+
+
+.banner-container-bg-backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0 , 0 , 0.65);
+}
+
+.banner-img-container {
+    width: 150px;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.banner-img-container >img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-info-container {
+    padding: 0.5rem 1rem; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.banner-info-movie-title {
+    font-size: 1.5rem;
+    color: #6da6d5; 
+}
+
+.banner-info-movie-title:hover {
+    color: #d9eeff;
+}
+
+.banner-info-movie-details {
+    text-align: justify;
+
+}
+
+.banner-info-utility-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-info-utility-container-icon-container {
+    display: flex;
+}
+
+.banner-info-utility-container-ul {
+    display: flex;
+    list-style: none;
+}
+
+.banner-info-utility-container-li {
+    margin-right: 0.5rem;
+}
+
+
+@media (max-width: 800px) {
+    /* CSS styles for small screens go here */
+    .banner-info-container {
+        gap: 0.5rem;
+    }
+    .banner-container{
+        height: fit-content;
+        font-size: 0.9rem;
+        margin-top: 0;
+    }
+    .banner-info-movie-title {
+        font-size: 1.1rem;
+    }
+    .banner-img-container {
+        align-self: center;
+    }
+    .banner-info-utility-container {
+        display: none;
+    }
+    .banner-info-movie-details {
+        text-align: left;
+    }
+    .banner-info-container {
+        align-self: center;
+    }
+}
+  
